@@ -9,105 +9,105 @@
   </head>
   <body>
     <section id="splash">
-      <h2>Test hej hej</h2>
       <button>Become a better athlete</button>
       <p>Get personalised conent to help you become the best athelte</p>
 
-      <div id="gerenal_info" class="modal hide">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias laborum eveniet, sequi, in ratione adipisci modi veritatis expedita officia explicabo illo laboriosam ipsam quod blanditiis impedit corporis deleniti provident.</p>
-        <form action="">
-          <!-- Name -->
-          <div class="form-group">
-            <label class="label" for="name">Full name
-                <span class="hint">Please fill out your full name</span>
-            </label>
-            <input id="name" name="name" type="text" placeholder="" required>
-          </div>
-          <!-- Gamer tag -->
-          <div class="form-group">
-            <label class="label" for="tag">Gamer tag
-                <span class="hint">Please enter your age</span>
-            </label>
-            <input id="tag" name="tag" type="text" required>
-          </div>
-          <!-- Age -->
-          <div class="form-group">
-            <label class="label" for="age">Age
-                <span class="hint">Please enter your age</span>
-            </label>
-            <input id="age" name="age" type="number" inputmode="numeric"  pattern="[0-9]{,3}" required>
-          </div>
-          <!-- E-mail -->
-          <div class="form-group">
-            <label class="label" for="email">Email
-                <span class="hint">Please enter a valid email</span>
-            </label>
-            <input id="email" name="email" type="email" inputmode="email" required>
-          </div>
-          <!-- Password -->
-          <div class="form-group">
-            <label class="label" for="password">Password
-                <span class="hint">Please enter your age</span>
-            </label>
-            <input id="password" name="password" type="password" required>
-          </div>
-        </form>
-      </div>
+      <form action="">
+        <div id="gerenal_info" class="modal hide">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias laborum eveniet, sequi, in ratione adipisci modi veritatis expedita officia explicabo illo laboriosam ipsam quod blanditiis impedit corporis deleniti provident.</p>
+            <!-- Name -->
+            <div class="form-group">
+              <label class="label" for="name">Full name
+                  <span class="hint">Please fill out your full name</span>
+              </label>
+              <input id="name" name="name" type="text" placeholder="" required>
+            </div>
+            <!-- Gamer tag -->
+            <div class="form-group">
+              <label class="label" for="tag">Gamer tag
+                  <span class="hint">Please enter your age</span>
+              </label>
+              <input id="tag" name="tag" type="text" required>
+            </div>
+            <!-- Age -->
+            <div class="form-group">
+              <label class="label" for="age">Age
+                  <span class="hint">Please enter your age</span>
+              </label>
+              <input id="age" name="age" type="number" inputmode="numeric"  pattern="[0-9]{,3}" required>
+            </div>
+            <!-- E-mail -->
+            <div class="form-group">
+              <label class="label" for="email">Email
+                  <span class="hint">Please enter a valid email</span>
+              </label>
+              <input id="email" name="email" type="email" inputmode="email" required>
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+              <label class="label" for="password">Password
+                  <span class="hint">Please enter your age</span>
+              </label>
+              <input id="password" name="password" type="password" required>
+            </div>
+        </div>
 
-      <div id="user_info" class="modal hide">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit dignissimos commodi nesciunt nostrum voluptates distinctio voluptatem odio ipsam sequi! Deserunt doloremque consequatur harum consequuntur illum suscipit at totam asperiores!</p>
-        <form action="">
-          <!-- Games  -->
-          <div class="form-group">
-            <legend>What type of games do you play?</legend>
-            
-            <label class="label" for="fps">FPS</label>
-            <input id="fps" name="game" type="checkbox">
-            
-            <label class="label" for="mmorpg">MMORPG</label>
-            <input id="mmorpg" name="game" type="checkbox">
+        <div id="user_info" class="modal hide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit dignissimos commodi nesciunt nostrum voluptates distinctio voluptatem odio ipsam sequi! Deserunt doloremque consequatur harum consequuntur illum suscipit at totam asperiores!</p>
 
-            <label class="label" for="sports">Sports</label>
-            <input id="sports" name="game" type="checkbox">
+            <!-- Games  -->
+            <div class="form-group">
+              <legend>What type of games do you play?</legend>
+              
+              <label class="label" for="fps">FPS</label>
+              <input id="fps" name="game" type="checkbox" value="fps">
+              
+              <label class="label" for="mmorpg">MMORPG</label>
+              <input id="mmorpg" name="game" type="checkbox" value="mmorpg">
 
-            <label class="label" for="racing">Racing</label>
-            <input id="racing" name="game" type="checkbox">
+              <label class="label" for="sports">Sports</label>
+              <input id="sports" name="game" type="checkbox" value="sports">
 
-            <label class="label" for="tower_defense">Tower defense</label>
-            <input id="tower_defense" name="game" type="checkbox">
+              <label class="label" for="racing">Racing</label>
+              <input id="racing" name="game" type="checkbox" value="racing">
 
-            <label class="label" for="rts">RTS</label>
-            <input id="rts" name="game" type="checkbox">
+              <label class="label" for="tower_defense">Tower defense</label>
+              <input id="tower_defense" name="game" type="checkbox" value="tower_defense">
 
-            <label class="label" for="simulation">Simulation</label>
-            <input id="simulation" name="game" type="checkbox">
+              <label class="label" for="rts">RTS</label>
+              <input id="rts" name="game" type="checkbox" value="rts">
 
-            <label class="label" for="role_playing">Role-playing</label>
-            <input id="role_playing" name="game" type="checkbox">
+              <label class="label" for="simulation">Simulation</label>
+              <input id="simulation" name="game" type="checkbox" value="simulation">
 
-            <label class="label" for="adventure">Adventure</label>
-            <input id="adventure" name="game" type="checkbox">
+              <label class="label" for="role_playing">Role-playing</label>
+              <input id="role_playing" name="game" type="checkbox" value="role_playing">
 
-            <label class="label" for="survival">Survival</label>
-            <input id="survival" name="game" type="checkbox">
+              <label class="label" for="adventure">Adventure</label>
+              <input id="adventure" name="game" type="checkbox" value="adventure">
 
-            <label class="label" for="fighting">Fighting</label>
-            <input id="fighting" name="game" type="checkbox">
+              <label class="label" for="survival">Survival</label>
+              <input id="survival" name="game" type="checkbox" value="survival">
 
-            <label class="label" for="rhythm">Rhythm</label>
-            <input id="rhythm" name="game" type="checkbox">
-            
-            <label class="label" for="battle_royal">Battle royal</label>
-            <input id="battle_royal" name="game" type="checkbox">
+              <label class="label" for="fighting">Fighting</label>
+              <input id="fighting" name="game" type="checkbox" value="fighting">
 
-            <label class="label" for="platforme">Platforme</label>
-            <input id="platforme" name="game" type="checkbox">
-            
-          </div>
+              <label class="label" for="rhythm">Rhythm</label>
+              <input id="rhythm" name="game" type="checkbox" value="rhythm">
+              
+              <label class="label" for="battle_royal">Battle royal</label>
+              <input id="battle_royal" name="game" type="checkbox" value="battle_royal">
+
+              <label class="label" for="platforme">Platforme</label>
+              <input id="platforme" name="game" type="checkbox" value="platforme">
+              
+            </div>
+
+            <button id="add" type="submit">Create account</button>
         </form>
       </div>
     </section>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

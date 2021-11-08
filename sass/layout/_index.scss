@@ -1,0 +1,71 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/*--- Mobile ---*/
+
+#splash {
+  background-image: url(images/mobile.png);
+  max-width: none;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: 50% 10%;
+  display: grid;
+  grid-template-columns: 50px 30px auto 30px 50px;
+  grid-template-rows: 25% 100px auto 65px 20%;
+  grid-gap: 15px;
+}
+//<p> på frontpage under knap
+p {
+  grid-column: 3 / span 1;
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row: 5/6;
+  color: colors.$font_color_on_frontpages;
+  text-align: center;
+  margin: 0.5em 1em 0 1em;
+  font-family: "sharpiroFontForFrontpages";
+  font-size: smaller;
+}
+
+/*--- Ipad lodret---*/
+
+@media (min-width: 810px) {
+  #splash {
+    background-image: url(images/ipad.png);
+    grid-template-columns: 100px 65px auto 65px 100px;
+    grid-template-rows: 25% 100px auto 68px 11%;
+  }
+
+  p {
+    margin: 0.5em 7.7em 0 7.7em;
+  }
+}
+
+/*--- Ipad vandret ---*/
+
+@media (min-width: 1080px) {
+  #splash {
+    background-image: url(images/mellem.png);
+    grid-template-columns: 190px 95px auto 95px 190px;
+    grid-template-rows: 25% 100px auto 66px 12%;
+  }
+}
+
+/*--- Desktop ---*/
+
+@media (min-width: 1200px) {
+  #splash {
+    background-image: url(images/desktop.png);
+    grid-template-columns: 290px 135px auto 135px 290px;
+    grid-template-rows: 25% 100px auto 67px 10%;
+  }
+  p {
+    margin: 0.5em 9em 0em 9em;
+  }
+}

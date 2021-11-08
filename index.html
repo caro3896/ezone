@@ -21,7 +21,6 @@
           <div class="content">
           <p class="form-text">Create and account and become a member of the ezone community. 
             <br> Log in and get a personalised feed with tips and trick for you to become the best esport athlete you can be.
-            <br>Sign up now and start improving.
           </p>
           <!-- Name -->
           <div class="form-group">
@@ -145,10 +144,10 @@
               <legend>Is there any specific game(s) you would like to improve in?</legend>
 
                 <input id="yes_game" name="improve_game" type="radio" value="yes">
-                <label for="yes_game">Yes</label>
+                <label class="label" for="yes_game">Yes</label>
 
                 <input id="no_game" name="improve_game" type="radio" value="no">
-                <label for="no_game">No</label>
+                <label class="label" for="no_game">No</label>
             </div>
 
             <div class="form-group no-show">
@@ -203,7 +202,7 @@
 
                 <li>
                   <input id="wow" name="game_improve" type="checkbox" value="world of warcraft">
-                  <label class="label" for="wow">World of Warkcraft</label>
+                  <label class="label" for="wow">World of Warcraft</label>
                 </li>
 
                 <li>
@@ -212,8 +211,8 @@
                 </li>
               
                 <li>
-                  <label class="label" for="starcraft">Starcraft</label>
                   <input id="starcraft" name="game_improve" type="checkbox" value="starcraft">
+                  <label class="label" for="starcraft">Starcraft</label>
                 </li>
 
                 <li>
@@ -227,8 +226,8 @@
                 </li>
 
                 <li>
-                  <label class="label" for="dota">Dota</label>
                   <input id="dota" name="game_improve" type="checkbox" value="dota">
+                  <label class="label" for="dota">Dota</label>
                 </li>
 
                 <li>
@@ -269,11 +268,11 @@
                 <span>E.g. reaction time, tactics, technology ect.</span>
               </legend>
 
-              <label for="yes_area">Yes</label>
               <input id="yes_area" name="improve_area" type="radio" value="yes">
+              <label class="label" for="yes_area">Yes</label>
 
-              <label for="no_area">No</label>
               <input id="no_area" name="improve_area" type="radio" value="no">
+              <label class="label" for="no_area">No</label>
 
             </div>
 
@@ -365,12 +364,12 @@
             </div>
             <button>Next</button>
           </div>
-          </fieldset>
+        </fieldset>
 
-          <fieldset id="personal_info" class="modal hide">
+        <fieldset id="personal_info" class="modal">
+          <div class="content">
             <p class="form-text">Perfect, we're almost there, just a few more questions!
-              <br>This time it's getting personal, but bare with us...
-            </p>
+              <br>This time it's getting personal, but bare with us...</p>
 
             <!-- Gameplay -->
             <div class="form-group">
@@ -390,42 +389,44 @@
                 <span>Do you play any sports, go to the gym, take long walks with your dog?</span>
               </legend>
 
-              <label for="yes">Yes</label>
               <input id="yes" name="exercise" type="radio" value="yes">
+              <label class="label" for="yes">Yes</label>
 
-              <label for="no">No</label>
               <input id="no" name="exercise" type="radio" value="no">
+              <label class="label" for="no">No</label>
 
-              <label for="not_important">I prefer not to answer/I don't find this relevant</label>
               <input id="not_important" name="exercise" type="radio" value="prefer not to answer">
+              <label class="label" for="not_important">I prefer not to answer/I don't find this relevant</label>
 
             </div>
 
             <!-- Mental health -->
             <div class="form-group">
-              <legend>How has your mental healt been lately?
-                <span>Have you experienced any of the following symptoms:
+              <legend>How has your mental health been lately?
+                <span class="expand">Have you experienced any of the following symptoms:
                   <br>Trouble sleeping, constant headache, lack of motivation, trouble concentrating ect.
                 </span>
               </legend>
 
-              <label for="yes">Yes</label>
               <input id="yes" name="mental_health" type="radio" value="yes">
+              <label class="label" for="yes">Yes</label>
 
-              <label for="no">No</label>
               <input id="no" name="mental_health" type="radio" value="no">
+              <label class="label" for="no">No</label>
 
-              <label for="not_important">I prefer not to answer/I don't find this relevant</label>
               <input id="not_important" name="mental_health" type="radio" value="prefer not to answer">
+              <label class="label" for="not_important">I prefer not to answer/I don't find this relevant</label>
 
             </div>
+
             <p>That's it. We're ready to supply you with personal content to take your gaming to the next level.
               <br>Just one more click and you're ready.
             </p>
+
             <button id="add" type="submit">Create account</button>
-          </fieldset>
+          </div>
+        </fieldset>
         
-            
         </form>
     </section>
 

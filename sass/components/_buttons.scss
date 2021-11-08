@@ -2,23 +2,24 @@
 
 /*--- Mobile ---*/
 //styling af knap på frontpage
-span,
-button {
+#splash_span,
+#join {
   position: relative;
   overflow: hidden;
   cursor: pointer;
   grid-column: 3 / span 1;
   grid-row: 4/5;
   border-radius: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  // margin-left: 20px;
+  // margin-right: 20px;
   background: linear-gradient(90deg, rgba(91, 224, 128, 1) 5%, rgba(240, 252, 240, 1) 30%, rgba(185, 248, 185, 1) 50%, rgba(91, 224, 128, 1) 90%);
   border: 3px solid #5ce07f;
   box-shadow: 0px 0px 14px 1px #5ce07f;
   z-index: 4;
   font-size: 0.85em;
-  font-family: "sharpiroFontForFrontpages";
+  font-family: "sharpiro-regular";
   text-transform: uppercase;
+  // max-width: 400px;
 }
 
 .fill-two {
@@ -44,15 +45,15 @@ button {
     background-position: 0%;
   }
 }
-span {
+#splash_span {
   filter: (blur(8px));
 }
 
 /*--- Ipad lodret---*/
 
 @media (min-width: 810px) {
-  span,
-  button {
+  #splash_span,
+  #join {
     margin-left: 70px;
     margin-right: 70px;
     font-size: 0.9em;
@@ -62,8 +63,8 @@ span {
 /*--- Ipad vandret ---*/
 
 @media (min-width: 1080px) {
-  span,
-  button {
+  #splash_span,
+  #join {
     margin-left: 85px;
     margin-right: 85px;
   }
@@ -72,8 +73,8 @@ span {
 /*--- Desktop ---*/
 
 @media (min-width: 1200px) {
-  span,
-  button {
+  #splash_span,
+  #join {
     margin-left: 95px;
     margin-right: 95px;
   }

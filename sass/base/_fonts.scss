@@ -1,10 +1,33 @@
 //font for the <p> on front pages.
 @font-face {
-  font-family: "sharpiroFontForFrontpages";
+  font-family: "sharpiro-regular";
   src: url("../fonts/sharpiro-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "sharpiro-bold";
+  src: url("../fonts/sharpiro-bold.woff2") format("woff2");
 }
 
 // @font-face {
 //   font-family: "uniformProFontForFrontpageButton";
 //   src: url("../fonts/uniform-pro-con-medium.woff2") format("woff2");
 // }
+
+$base-font: "sharpiro-regular";
+$base-font-bold: "sharpiro-bold";
+
+p {
+  font-family: $base-font;
+}
+
+label {
+  font-family: $base-font_bold;
+  text-transform: uppercase;
+}
+
+.hint {
+  font-family: $base-font;
+  font-size: 0.9rem;
+  color: rgb(79, 79, 79);
+}

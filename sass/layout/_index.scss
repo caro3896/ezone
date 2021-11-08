@@ -16,12 +16,13 @@
   background-size: cover;
   background-position: 50% 10%;
   display: grid;
-  grid-template-columns: 50px 30px auto 30px 50px;
+  grid-template-columns: 30px 10px auto 10px 30px;
   grid-template-rows: 25% 100px auto 65px 20%;
   grid-gap: 15px;
 }
+
 //<p> på frontpage under knap
-p {
+.p_splash {
   grid-column: 3 / span 1;
   grid-column-start: 3;
   grid-column-end: span 1;
@@ -29,8 +30,16 @@ p {
   color: colors.$font_color_on_frontpages;
   text-align: center;
   margin: 0.5em 1em 0 1em;
-  font-family: "sharpiroFontForFrontpages";
   font-size: smaller;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+  z-index: 5;
 }
 
 /*--- Ipad lodret---*/

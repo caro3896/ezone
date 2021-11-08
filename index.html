@@ -115,7 +115,7 @@
               <input id="yes" name="improve_game" type="radio" value="yes">
 
               <label for="no">No</label>
-              <input id="no" name="improve_game" type="radio" value="yes">
+              <input id="no" name="improve_game" type="radio" value="no">
 
             </div>
 
@@ -196,7 +196,7 @@
               <input id="yes" name="improve_area" type="radio" value="yes">
 
               <label for="no">No</label>
-              <input id="no" name="improve_area" type="radio" value="yes">
+              <input id="no" name="improve_area" type="radio" value="no">
 
             </div>
 
@@ -263,15 +263,53 @@
             <!-- Gameplay -->
             <div class="form-group">
               <label for="gameplay">How many hours a day do you generally play?</label>
-              <input id="gameplay" name="gameplay" type="range" value="">
+              <input id="gameplay" name="gameplay" type="range" value="5" step="1" min="0" max="12">
             </div>
 
             <!-- Sleep -->
+            <div class="form-group">
+              <label for="sleep">How many hours of sleep do ypu get on average?</label>
+              <input id="sleep" name="sleep" type="range" value="7" step="1" min="0" max="12">
+            </div>
 
             <!-- Exercise -->
+            <div class="form-group">
+              <legend>Are you physically active during the week?
+                <span>Do you play any sports, go to the gym, take long walks with your dog?</span>
+              </legend>
+
+              <label for="yes">Yes</label>
+              <input id="yes" name="exercise" type="radio" value="yes">
+
+              <label for="no">No</label>
+              <input id="no" name="exercise" type="radio" value="no">
+
+              <label for="not_important">I prefer not to answer/I don't find this relevant</label>
+              <input id="not_important" name="exercise" type="radio" value="prefer not to answer">
+
+            </div>
 
             <!-- Mental health -->
-            
+            <div class="form-group">
+              <legend>How has your mental healt been lately?
+                <span>Have you experienced any of the following symptoms:
+                  <br>Trouble sleeping, constant headache, lack of motivation, trouble concentrating ect.
+                </span>
+              </legend>
+
+              <label for="yes">Yes</label>
+              <input id="yes" name="mental_health" type="radio" value="yes">
+
+              <label for="no">No</label>
+              <input id="no" name="mental_health" type="radio" value="no">
+
+              <label for="not_important">I prefer not to answer/I don't find this relevant</label>
+              <input id="not_important" name="mental_health" type="radio" value="prefer not to answer">
+
+            </div>
+            <p>That's it. We're ready to supply you with personal content to take your gaming to the next level.
+              <br>Just one more click and you're ready.
+            </p>
             <button id="add" type="submit">Create account</button>
           </fieldset>
         

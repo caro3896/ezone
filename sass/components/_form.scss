@@ -3,6 +3,16 @@
   visibility: hidden;
 }
 
+// Hide modal
+.hide {
+  visibility: hidden;
+}
+
+// Hide choices
+.no-show {
+  // display: none;
+}
+
 // Reset on age button - remove arrows on number input
 input:is([type="number"]) {
   -moz-appearance: textfield;
@@ -18,3 +28,84 @@ input::-webkit-inner-spin-button {
 //   -webkit-appearance: none;
 //   appearance: none;
 // }
+
+// .modal {
+//   width: 350px;
+//   height: 85vh;
+//   background: inherit;
+//   overflow: hidden;
+//   border-radius: 30px;
+//   border: none;
+// }
+
+// .modal:before {
+//   width: 400px;
+//   height: 100vh;
+//   content: "";
+//   background: inherit;
+//   box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.8);
+//   filter: blur(10px);
+// }
+
+.modal {
+  background: rgba(255, 255, 255, 0.52);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 90vw;
+  height: 85vh;
+  border: none;
+  overflow-y: scroll;
+}
+
+// .modal:before {
+//   content: "";
+//   position: absolute;
+//   background: inherit;
+//   z-index: -1;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+//   filter: blur(10px);
+//   margin: -20px;
+// }
+
+.content {
+  margin: 5vw;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.form-text {
+  margin: 20px auto;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  box-shadow: inset 1px 3px 5px 3px #aea8a86e, 3px 3px 6px 2px #aea8a86e;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 100%;
+}
+
+input[type="checkbox"],
+[type="radio"] {
+  height: 20px;
+  width: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

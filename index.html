@@ -13,51 +13,48 @@
       <p>Get personalised content to help you become the best athlete</p>
 
       <form action="">
-        <fieldset id="gerenal_info" class="modal hide">
-          <p>Create and account and become a member of the ezone community. Log in and get a personalised feed with tips and trick for you to become the best esport athlete you can be.
+        <fieldset id="gerenal_info" class="modal">
+          <div class="content">
+          <p class="form-text">Create and account and become a member of the ezone community. Log in and get a personalised feed with tips and trick for you to become the best esport athlete you can be.
             <br>Sign up now and start improving.
           </p>
           <!-- Name -->
           <div class="form-group">
-            <label class="label" for="name">Full name
-                <span class="hint">Please fill out your full name</span>
-            </label>
+            <label class="label" for="name">Full name</label>
             <input id="name" name="name" type="text" placeholder="" required>
+            <span class="hint">Please fill out your full name</span>
           </div>
           <!-- Gamer tag -->
           <div class="form-group">
-            <label class="label" for="tag">Gamer tag
-                <span class="hint">Please enter your gamer tag</span>
-            </label>
+            <label class="label" for="tag">Gamer tag</label>
             <input id="tag" name="tag" type="text" required>
+            <span class="hint">Please enter your gamer tag</span>
           </div>
           <!-- Age -->
           <div class="form-group">
-            <label class="label" for="age">Age
-                <span class="hint">Please enter your age</span>
-            </label>
+            <label class="label" for="age">Age</label>
             <input id="age" name="age" type="number" inputmode="numeric"  pattern="[0-9]{,3}" required>
+            <span class="hint">Please enter your age</span>
           </div>
           <!-- E-mail -->
           <div class="form-group">
-            <label class="label" for="email">Email
-                <span class="hint">Please enter a valid email</span>
-            </label>
+            <label class="label" for="email">Email</label>
             <input id="email" name="email" type="email" inputmode="email" required>
+            <span class="hint">Please enter your age</span>
           </div>
           <!-- Password -->
           <div class="form-group">
-            <label class="label" for="password">Password
-                <span class="hint">Your password must be atleast 8 characters long</span>
-            </label>
+            <label class="label" for="password">Password</label>
             <input id="password" name="password" type="password" required>
+            <span class="hint">Your password must be atleast 8 characters long</span>
           </div>
         <button>Next</button>
+      </div>
         </fieldset>
 
         <fieldset id="user_info" class="modal hide">
-          <p>Alright, user</p>
-          <p>Now let's get to know you a little better, that way we can customize our content and only show you things you might find interesting and relevant.</p>
+          <p class="form-text">Alright, user</p>
+          <p class="form-text">Now let's get to know you a little better, that way we can customize our content and only show you things you might find interesting and relevant.</p>
 
             <!-- Games  -->
             <div class="form-group">
@@ -255,8 +252,8 @@
             <button>Next</button>
           </fieldset>
 
-          <fieldset id="personal_info" clas="modal hide">
-            <p>Perfect, we're almost there, just a few more questions!
+          <fieldset id="personal_info" class="modal hide">
+            <p class="form-text">Perfect, we're almost there, just a few more questions!
               <br>This time it's getting personal, but bare with us...
             </p>
 

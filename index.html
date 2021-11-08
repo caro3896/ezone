@@ -10,50 +10,54 @@
   <body>
     <section id="splash">
       <button>Become a better athlete</button>
-      <p>Get personalised conent to help you become the best athelte</p>
+      <p>Get personalised content to help you become the best athlete</p>
 
       <form action="">
-        <div id="gerenal_info" class="modal hide">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias laborum eveniet, sequi, in ratione adipisci modi veritatis expedita officia explicabo illo laboriosam ipsam quod blanditiis impedit corporis deleniti provident.</p>
-            <!-- Name -->
-            <div class="form-group">
-              <label class="label" for="name">Full name
-                  <span class="hint">Please fill out your full name</span>
-              </label>
-              <input id="name" name="name" type="text" placeholder="" required>
-            </div>
-            <!-- Gamer tag -->
-            <div class="form-group">
-              <label class="label" for="tag">Gamer tag
-                  <span class="hint">Please enter your age</span>
-              </label>
-              <input id="tag" name="tag" type="text" required>
-            </div>
-            <!-- Age -->
-            <div class="form-group">
-              <label class="label" for="age">Age
-                  <span class="hint">Please enter your age</span>
-              </label>
-              <input id="age" name="age" type="number" inputmode="numeric"  pattern="[0-9]{,3}" required>
-            </div>
-            <!-- E-mail -->
-            <div class="form-group">
-              <label class="label" for="email">Email
-                  <span class="hint">Please enter a valid email</span>
-              </label>
-              <input id="email" name="email" type="email" inputmode="email" required>
-            </div>
-            <!-- Password -->
-            <div class="form-group">
-              <label class="label" for="password">Password
-                  <span class="hint">Please enter your age</span>
-              </label>
-              <input id="password" name="password" type="password" required>
-            </div>
-        </div>
+        <fieldset id="gerenal_info" class="modal hide">
+          <p>Create and account and become a member of the ezone community. Log in and get a personalised feed with tips and trick for you to become the best esport athlete you can be.
+            <br>Sign up now and start improving.
+          </p>
+          <!-- Name -->
+          <div class="form-group">
+            <label class="label" for="name">Full name
+                <span class="hint">Please fill out your full name</span>
+            </label>
+            <input id="name" name="name" type="text" placeholder="" required>
+          </div>
+          <!-- Gamer tag -->
+          <div class="form-group">
+            <label class="label" for="tag">Gamer tag
+                <span class="hint">Please enter your gamer tag</span>
+            </label>
+            <input id="tag" name="tag" type="text" required>
+          </div>
+          <!-- Age -->
+          <div class="form-group">
+            <label class="label" for="age">Age
+                <span class="hint">Please enter your age</span>
+            </label>
+            <input id="age" name="age" type="number" inputmode="numeric"  pattern="[0-9]{,3}" required>
+          </div>
+          <!-- E-mail -->
+          <div class="form-group">
+            <label class="label" for="email">Email
+                <span class="hint">Please enter a valid email</span>
+            </label>
+            <input id="email" name="email" type="email" inputmode="email" required>
+          </div>
+          <!-- Password -->
+          <div class="form-group">
+            <label class="label" for="password">Password
+                <span class="hint">Your password must be atleast 8 characters long</span>
+            </label>
+            <input id="password" name="password" type="password" required>
+          </div>
+        <button>Next</button>
+        </fieldset>
 
-        <div id="user_info" class="modal hide">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit dignissimos commodi nesciunt nostrum voluptates distinctio voluptatem odio ipsam sequi! Deserunt doloremque consequatur harum consequuntur illum suscipit at totam asperiores!</p>
+        <fieldset id="user_info" class="modal hide">
+          <p>Alright, user</p>
+          <p>Now let's get to know you a little better, that way we can customize our content and only show you things you might find interesting and relevant.</p>
 
             <!-- Games  -->
             <div class="form-group">
@@ -102,8 +106,176 @@
               <input id="platforme" name="game" type="checkbox" value="platforme">
               
             </div>
-          </div>
+
+            <!-- Improve game -->
+            <div class="form-group">
+              <legend>Is there any specific game(s) you would like to improve in?</legend>
+
+              <label for="yes">Yes</label>
+              <input id="yes" name="improve_game" type="radio" value="yes">
+
+              <label for="no">No</label>
+              <input id="no" name="improve_game" type="radio" value="yes">
+
+            </div>
+
+            <div class="form-group no-show">
+              <legend>What game(s) would you like to improve in?</legend>
+              
+              <label class="label" for="cs_go">CS:GO</label>
+              <input id="cs_go" name="game_improve" type="checkbox" value="cs:go">
+
+              <label class="label" for="tekken">Tekken</label>
+              <input id="tekken" name="game_improve" type="checkbox" value="tekken">
+
+              <label class="label" for="fifa">FIFA</label>
+              <input id="fifa" name="game_improve" type="checkbox" value="fifa">
+
+              <label class="label" for="mario">Super Mario</label>
+              <input id="mario" name="game_improve" type="checkbox" value="super mario">
+
+              <label class="label" for="fortnite">Fortnite</label>
+              <input id="fortnite" name="game_improve" type="checkbox" value="fortnite">
+
+              <label class="label" for="cod">Call of Duty</label>
+              <input id="cod" name="game_improve" type="checkbox" value="call of duty">
+
+              <label class="label" for="sims">The Sims</label>
+              <input id="sims" name="game_improve" type="checkbox" value="sims">
+              
+              <label class="label" for="mortal_combat">Mortal Combat</label>
+              <input id="mortal_combat" name="game_improve" type="checkbox" value="mortal combat">
+
+              <label class="label" for="guitar_hero">Guitar Hero</label>
+              <input id="guitar_hero" name="game_improve" type="checkbox" value="guitar hero">
+
+              <label class="label" for="wow">World of Warkcraft</label>
+              <input id="wow" name="game_improve" type="checkbox" value="world of warcraft">
+
+              <label class="label" for="skyrim">Skyrim</label>
+              <input id="skyrim" name="game_improve" type="checkbox" value="skyrim">
+              
+              <label class="label" for="starcraft">Starcraft</label>
+              <input id="starcraft" name="game_improve" type="checkbox" value="starcraft">
+
+              <label class="label" for="warcraft">Warcraft</label>
+              <input id="warcraft" name="game_improve" type="checkbox" value="warcraft">
+
+              <label class="label" for="lol">League of Legends</label>
+              <input id="lol" name="game_improve" type="checkbox" value="league of legends">
+
+              <label class="label" for="dota">Dota</label>
+              <input id="dota" name="game_improve" type="checkbox" value="dota">
+
+              <label class="label" for="valorant">Valorant</label>
+              <input id="valorant" name="game_improve" type="checkbox" value="valorant">
+
+              <label class="label" for="left_for_dead">Left for dead</label>
+              <input id="left_for_dead" name="game_improve" type="checkbox" value="left for dead">
+
+              <label class="label" for="overwatch">Overwatch</label>
+              <input id="overwatch" name="game_improve" type="checkbox" value="overwatch">
+
+              <label class="label" for="pubg">PUBG</label>
+              <input id="pubg" name="game_improve" type="checkbox" value="pubg">
+
+              <label class="label" for="diablo">Diablo</label>
+              <input id="diablo" name="game_improve" type="checkbox" value="diablo">
+
+              <label class="label" for="minecraft">Minecraft</label>
+              <input id="minecraft" name="game_improve" type="checkbox" value="minecraft">
+            </div>
+
+            <!-- Improve skill -->
+            <div class="form-group">
+              <legend>Is there any specific area(s) you would like to improve in?
+                <span>E.g. reaction time, tactics, technology ect.</span>
+              </legend>
+
+              <label for="yes">Yes</label>
+              <input id="yes" name="improve_area" type="radio" value="yes">
+
+              <label for="no">No</label>
+              <input id="no" name="improve_area" type="radio" value="yes">
+
+            </div>
+
+            <div class="form-group no-show">
+              <legend>What area(s) would you like to improve in?</legend>
+              
+              <label class="label" for="hand_eye_coordination">Hand/eye coordination</label>
+              <input id="hand_eye_coordination" name="area_improve" type="checkbox" value="Hand/eye coordination">
+
+              <label class="label" for="reaction_time">Reaction time</label>
+              <input id="reaction_time" name="area_improve" type="checkbox" value="reaction time">
+
+              <label class="label" for="hearing">Hearing</label>
+              <input id="hearing" name="area_improve" type="checkbox" value="hearing">
+
+              <label class="label" for="vision">Vision</label>
+              <input id="vision" name="area_improve" type="checkbox" value="vision">
+
+              <label class="label" for="communication">Communication</label>
+              <input id="communication" name="area_improve" type="checkbox" value="communication">
+
+              <label class="label" for="multi-tasking">Multi-tasking</label>
+              <input id="multi-tasking" name="area_improve" type="checkbox" value="multi-tasking">
+
+              <label class="label" for="mindset">Mindset</label>
+              <input id="mindset" name="area_improve" type="checkbox" value="mindset">
+              
+              <label class="label" for="nutrition">Nutrition</label>
+              <input id="nutrition" name="area_improve" type="checkbox" value="nutrition">
+
+              <label class="label" for="injuries">Injuries</label>
+              <input id="injuries" name="area_improve" type="checkbox" value="injuries">
+
+              <label class="label" for="tech">Technology</label>
+              <input id="tech" name="game_improve" type="checkbox" value="technology">
+
+              <label class="label" for="physiology">Physiology</label>
+              <input id="physiology" name="area_improve" type="checkbox" value="physiology">
+              
+              <label class="label" for="sleep">Sleep</label>
+              <input id="sleep" name="area_improve" type="checkbox" value="sleep">
+
+              <label class="label" for="stress">Stress</label>
+              <input id="stress" name="area_improve" type="checkbox" value="stress">
+
+              <label class="label" for="tactical">Tactical</label>
+              <input id="tactical" name="area_improve" type="checkbox" value="tactical">
+
+              <label class="label" for="strategy">Strategy</label>
+              <input id="strategy" name="area_improve" type="checkbox" value="strategy">
+
+              <label class="label" for="leadership">Leadership</label>
+              <input id="leadership" name="area_improve" type="checkbox" value="leadership">
+
+            </div>
+            <button>Next</button>
+          </fieldset>
+
+          <fieldset id="personal_info" clas="modal hide">
+            <p>Perfect, we're almost there, just a few more questions!
+              <br>This time it's getting personal, but bare with us...
+            </p>
+
+            <!-- Gameplay -->
+            <div class="form-group">
+              <label for="gameplay">How many hours a day do you generally play?</label>
+              <input id="gameplay" name="gameplay" type="range" value="">
+            </div>
+
+            <!-- Sleep -->
+
+            <!-- Exercise -->
+
+            <!-- Mental health -->
+            
             <button id="add" type="submit">Create account</button>
+          </fieldset>
+        
+            
         </form>
     </section>
 

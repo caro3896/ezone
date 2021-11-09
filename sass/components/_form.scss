@@ -191,6 +191,34 @@ input[type="range"]::-ms-thumb {
   cursor: pointer;
 }
 
+// Range Label
+.range_value {
+  display: inline-block;
+  position: relative;
+  // width: 20px;
+  color: white;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #3e16d5;
+  padding: 5px 10px;
+  margin-left: 8px;
+  font-family: fonts.$base-font;
+  font-size: 0.9rem;
+
+  &:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #3e16d5;
+    border-bottom: 7px solid transparent;
+    content: "";
+  }
+}
+
 label + input[type="radio"] {
   margin-left: 1rem;
 }
@@ -233,32 +261,4 @@ li {
 
 .hint {
   display: block;
-}
-
-// TEST
-
-// Range Label
-.range_value {
-  display: inline-block;
-  position: relative;
-  // width: 20px;
-  color: white;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 3px;
-  background: #3e16d5;
-  padding: 5px 10px;
-  margin-left: 8px;
-
-  &:after {
-    position: absolute;
-    top: 8px;
-    left: -7px;
-    width: 0;
-    height: 0;
-    border-top: 7px solid transparent;
-    border-right: 7px solid #3e16d5;
-    border-bottom: 7px solid transparent;
-    content: "";
-  }
 }

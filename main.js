@@ -7,7 +7,7 @@ document.querySelector("#app").innerHTML = `
 
 import { get, post } from "./crud.js";
 import { start } from "./next_page.js";
-import { rangeInput, gameTagInput} from "./read_input.js";
+import { rangeInput, gameTagInput, yesOrNo } from "./read_input.js";
 
 get();
 
@@ -16,6 +16,8 @@ start();
 rangeInput();
 
 gameTagInput();
+
+yesOrNo();
 
 function showMembers(member) {
   console.log(member);

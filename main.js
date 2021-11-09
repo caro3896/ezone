@@ -6,8 +6,11 @@ document.querySelector("#app").innerHTML = `
 `; */
 
 import { get, post } from "./crud.js";
+import { start } from "./next_page.js";
 
 get();
+
+start();
 
 function showMembers(member) {
   console.log(member);

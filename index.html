@@ -25,33 +25,44 @@
             </p>
             <!-- Name -->
             <div class="form-group">
-              <label class="label" for="name">Full name</label>
+              <label class="label" for="name">Full name
+                <span class="required">*</span>
+              </label>
               <input id="name" name="name" type="text" placeholder="" required />
-              <span class="hint">Please fill out your full name</span>
+              <span class="error">Please fill out your full name</span>
             </div>
             <!-- Gamer tag -->
             <div class="form-group">
-              <label class="label" for="tag">Gamer tag</label>
+              <label class="label" for="tag">Gamer tag
+                <span class="required">*</span>
+              </label>
               <input id="tag" name="tag" type="text" required />
-              <span class="hint">Please enter your gamer tag</span>
+              <span class="error">Please enter your gamer tag</span>
             </div>
             <!-- Age -->
             <div class="form-group">
-              <label class="label" for="age">Age</label>
+              <label class="label" for="age">Age
+                <span class="required">*</span>
+              </label>
               <input id="age" name="age" type="number" inputmode="numeric" pattern="[0-9]{,3}" required />
-              <span class="hint">Please enter your age</span>
+              <span class="error">Please enter your age</span>
             </div>
             <!-- E-mail -->
             <div class="form-group">
-              <label class="label" for="email">Email</label>
+              <label class="label" for="email">Email
+                <span class="required">*</span>
+              </label>
               <input id="email" name="email" type="email" inputmode="email" required />
-              <span class="hint">Please enter your age</span>
+              <span class="error">Please enter your age</span>
             </div>
             <!-- Password -->
             <div class="form-group">
-              <label class="label" for="password">Password</label>
-              <input id="password" name="password" type="password" required />
-              <span class="hint">Your password must be atleast 8 characters long</span>
+              <label class="label" for="password">Password
+                <span class="required">*</span>
+                <span class="hint">Must be atleast 8 characters long</span>
+              </label>
+              <input id="password" name="password" type="password" pattern="(?=.{8,})" required />
+              <span class="error">Your password isn't long enough</span>
             </div>
             <div class="forms_buttons">
               <button>Next</button>
@@ -337,8 +348,8 @@
                 </li>
 
                 <li>
-                  <input id="sleep" name="area_improve" type="checkbox" value="sleep" />
-                  <label class="label" for="sleep">Sleep</label>
+                  <input id="sleep_improve" name="area_improve" type="checkbox" value="sleep" />
+                  <label class="label" for="sleep_improve">Sleep</label>
                 </li>
 
                 <li>
@@ -368,7 +379,7 @@
           </div>
         </fieldset>
 
-        <fieldset id="personal_info" class="modal hide">
+        <fieldset id="personal_info" class="modal">
           <div class="content">
             <p class="form-text">Perfect, we're almost there, just a few more questions! <br />This time it's getting personal, but bare with us...</p>
 
@@ -388,37 +399,37 @@
             <div class="form-group">
               <legend>
                 Are you physically active during the week?
-                <span>Do you play any sports, go to the gym, take long walks with your dog?</span>
+                <span class="hint">Do you play any sports, go to the gym, take long walks with your dog?</span>
               </legend>
-
-              <input id="yes" name="exercise" type="radio" value="yes" />
+             
+              <input id="yes_exercise" name="exercise" type="radio" value="yes" />
               <label class="label" for="yes">Yes</label>
 
-              <input id="no" name="exercise" type="radio" value="no" />
+              <input id="no_exercise" name="exercise" type="radio" value="no" />
               <label class="label" for="no">No</label>
 
-              <input id="not_important" name="exercise" type="radio" value="prefer not to answer" />
-              <label class="label" for="not_important">I prefer not to answer/I don't find this relevant</label>
+              <input id="not_important_exercise" name="exercise" type="radio" value="prefer not to answer" />
+              <label class="label" for="not_important">I prefer not to answer/ <br> I don't find this relevant</label>
             </div>
 
             <!-- Mental health -->
             <div class="form-group">
               <legend>
                 How has your mental health been lately?
-                <span class="expand">Have you experienced any of the following symptoms: <br />Trouble sleeping, constant headache, lack of motivation, trouble concentrating ect. </span>
+                <span class="hint">Have you experienced trouble sleeping, constant headache, lack of motivation, trouble concentrating ect. </span>
               </legend>
 
-              <input id="yes" name="mental_health" type="radio" value="yes" />
+              <input id="yes_health" name="mental_health" type="radio" value="yes" />
               <label class="label" for="yes">Yes</label>
 
-              <input id="no" name="mental_health" type="radio" value="no" />
+              <input id="no_health" name="mental_health" type="radio" value="no" />
               <label class="label" for="no">No</label>
 
-              <input id="not_important" name="mental_health" type="radio" value="prefer not to answer" />
+              <input id="not_important_health" name="mental_health" type="radio" value="prefer not to answer" />
               <label class="label" for="not_important">I prefer not to answer/I don't find this relevant</label>
             </div>
 
-            <p>That's it. We're ready to supply you with personal content to take your gaming to the next level. <br />Just one more click and you're ready.</p>
+            <p class="form-text">That's it. We're ready to supply you with personal content to take your gaming to the next level. <br />Just one more click and you're ready.</p>
             <div class="forms_buttons">
               <button id="add" type="submit">Create account</button>
             </div>

@@ -12,7 +12,9 @@ body {
 }
 
 #splash {
-  background-image: url(images/mobile.png);
+  background-image: url(images/mobil1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   max-width: none;
   width: 100vw;
   height: 100vh;
@@ -41,7 +43,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 40px;
+  // margin-top: 40px;
   z-index: 5;
 }
 

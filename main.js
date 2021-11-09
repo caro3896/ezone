@@ -7,13 +7,15 @@ document.querySelector("#app").innerHTML = `
 
 import { get, post } from "./crud.js";
 import { start } from "./next_page.js";
-import { rangeInput} from "./range.js";
+import { rangeInput, gameTagInput} from "./read_input.js";
 
 get();
 
 start();
 
 rangeInput();
+
+gameTagInput();
 
 function showMembers(member) {
   console.log(member);

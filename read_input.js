@@ -15,6 +15,14 @@ export function rangeInput(){
     const sleepHours = document.querySelector("#sleep_hours");
     sleepHours.textContent = sleep.value;
   });
+}
 
+export function gameTagInput() {
+  console.log("hello");
+  const gamerTag = document.querySelector("#name");
 
+  gamerTag.addEventListener("input", () => {
+    console.log(gamerTag.value);
+    document.querySelector("#user").textContent = `Alright, ${gamerTag.value}`;
+  });
 }

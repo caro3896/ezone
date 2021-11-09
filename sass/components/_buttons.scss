@@ -49,6 +49,22 @@
   filter: (blur(8px));
 }
 
+.forms_buttons {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+button {
+  background-color: #3e16d5;
+  padding: 20px 30px;
+  border-radius: 50px;
+  color: white;
+  font-family: "sharpiro-regular";
+  font-size: 1.1em;
+  border: 1px solid #3e16d5;
+  box-shadow: inset 3px 3px 7px #fcf5f5;
+  //box-shadow: 1px 2px 11px #897eb4;
+}
 /*--- Ipad lodret---*/
 
 @media (min-width: 810px) {

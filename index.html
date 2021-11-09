@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.scss">
+    <link rel="stylesheet" href="/style.scss" />
     <title>Vite App</title>
   </head>
   <body>
@@ -19,244 +19,245 @@
       <form action="">
         <fieldset id="gerenal_info" class="modal hide">
           <div class="content">
-          <p class="form-text">Create and account and become a member of the ezone community. 
-            <br> Log in and get a personalised feed with tips and trick for you to become the best esport athlete you can be.
-          </p>
-          <!-- Name -->
-          <div class="form-group">
-            <label class="label" for="name">Full name</label>
-            <input id="name" name="name" type="text" placeholder="" required>
-            <span class="hint">Please fill out your full name</span>
+            <p class="form-text">
+              Create and account and become a member of the ezone community. <br />
+              Log in and get a personalised feed with tips and trick for you to become the best esport athlete you can be.
+            </p>
+            <!-- Name -->
+            <div class="form-group">
+              <label class="label" for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="" required />
+              <span class="hint">Please fill out your full name</span>
+            </div>
+            <!-- Gamer tag -->
+            <div class="form-group">
+              <label class="label" for="tag">Gamer tag</label>
+              <input id="tag" name="tag" type="text" required />
+              <span class="hint">Please enter your gamer tag</span>
+            </div>
+            <!-- Age -->
+            <div class="form-group">
+              <label class="label" for="age">Age</label>
+              <input id="age" name="age" type="number" inputmode="numeric" pattern="[0-9]{,3}" required />
+              <span class="hint">Please enter your age</span>
+            </div>
+            <!-- E-mail -->
+            <div class="form-group">
+              <label class="label" for="email">Email</label>
+              <input id="email" name="email" type="email" inputmode="email" required />
+              <span class="hint">Please enter your age</span>
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+              <label class="label" for="password">Password</label>
+              <input id="password" name="password" type="password" required />
+              <span class="hint">Your password must be atleast 8 characters long</span>
+            </div>
+            <div class="forms_buttons">
+              <button>Next</button>
+            </div>
           </div>
-          <!-- Gamer tag -->
-          <div class="form-group">
-            <label class="label" for="tag">Gamer tag</label>
-            <input id="tag" name="tag" type="text" required>
-            <span class="hint">Please enter your gamer tag</span>
-          </div>
-          <!-- Age -->
-          <div class="form-group">
-            <label class="label" for="age">Age</label>
-            <input id="age" name="age" type="number" inputmode="numeric"  pattern="[0-9]{,3}" required>
-            <span class="hint">Please enter your age</span>
-          </div>
-          <!-- E-mail -->
-          <div class="form-group">
-            <label class="label" for="email">Email</label>
-            <input id="email" name="email" type="email" inputmode="email" required>
-            <span class="hint">Please enter your age</span>
-          </div>
-          <!-- Password -->
-          <div class="form-group">
-            <label class="label" for="password">Password</label>
-            <input id="password" name="password" type="password" required>
-            <span class="hint">Your password must be atleast 8 characters long</span>
-          </div>
-        <button>Next</button>
-      </div>
         </fieldset>
 
         <fieldset id="user_info" class="modal hide">
           <div class="content">
-          <p class="form-text">Alright, user</p>
-          <p class="form-text">Now let's get to know you a little better, that way we can customize our content and only show you things you might find interesting and relevant.</p>
+            <p class="form-text">Alright, user</p>
+            <p class="form-text">Now let's get to know you a little better, that way we can customize our content and only show you things you might find interesting and relevant.</p>
 
             <!-- Games  -->
             <div class="form-group">
               <legend>What type of games do you play?</legend>
-              
+
               <ul>
                 <li>
-                  <input id="fps" name="game" type="checkbox" value="fps">
+                  <input id="fps" name="game" type="checkbox" value="fps" />
                   <label class="label" for="fps">FPS</label>
                 </li>
-              
+
                 <li>
-                  <input id="mmorpg" name="game" type="checkbox" value="mmorpg">
+                  <input id="mmorpg" name="game" type="checkbox" value="mmorpg" />
                   <label class="label" for="mmorpg">MMORPG</label>
                 </li>
 
                 <li>
-                  <input id="sports" name="game" type="checkbox" value="sports">
+                  <input id="sports" name="game" type="checkbox" value="sports" />
                   <label class="label" for="sports">Sports</label>
                 </li>
 
                 <li>
-                  <input id="racing" name="game" type="checkbox" value="racing">
+                  <input id="racing" name="game" type="checkbox" value="racing" />
                   <label class="label" for="racing">Racing</label>
                 </li>
 
                 <li>
-                  <input id="tower_defense" name="game" type="checkbox" value="tower_defense">
+                  <input id="tower_defense" name="game" type="checkbox" value="tower_defense" />
                   <label class="label" for="tower_defense">Tower defense</label>
                 </li>
 
-              <li>
-                <input id="rts" name="game" type="checkbox" value="rts">
-                <label class="label" for="rts">RTS</label>
-              </li>
-              
-              <li>
-                <input id="simulation" name="game" type="checkbox" value="simulation">
-                <label class="label" for="simulation">Simulation</label>
-              </li>
-              
-              <li>
-                <input id="role_playing" name="game" type="checkbox" value="role_playing">
-                <label class="label" for="role_playing">Role-playing</label>
-              </li>
+                <li>
+                  <input id="rts" name="game" type="checkbox" value="rts" />
+                  <label class="label" for="rts">RTS</label>
+                </li>
 
-              <li>
-                <input id="adventure" name="game" type="checkbox" value="adventure">
-                <label class="label" for="adventure">Adventure</label>
-              </li>
-              
-              <li>
-                <input id="survival" name="game" type="checkbox" value="survival">
-                <label class="label" for="survival">Survival</label>
-              </li>
+                <li>
+                  <input id="simulation" name="game" type="checkbox" value="simulation" />
+                  <label class="label" for="simulation">Simulation</label>
+                </li>
 
-              <li>
-                <input id="fighting" name="game" type="checkbox" value="fighting">
-                <label class="label" for="fighting">Fighting</label>
-              </li>
+                <li>
+                  <input id="role_playing" name="game" type="checkbox" value="role_playing" />
+                  <label class="label" for="role_playing">Role-playing</label>
+                </li>
 
-              <li>
-                <input id="rhythm" name="game" type="checkbox" value="rhythm">
-                <label class="label" for="rhythm">Rhythm</label>
-              </li>
-              
-              <li>
-                <input id="battle_royal" name="game" type="checkbox" value="battle_royal">
-                <label class="label" for="battle_royal">Battle royal</label>
-              </li>
+                <li>
+                  <input id="adventure" name="game" type="checkbox" value="adventure" />
+                  <label class="label" for="adventure">Adventure</label>
+                </li>
 
-              <li>
-                <input id="platforme" name="game" type="checkbox" value="platforme">
-                <label class="label" for="platforme">Platforme</label>
-              </li>
+                <li>
+                  <input id="survival" name="game" type="checkbox" value="survival" />
+                  <label class="label" for="survival">Survival</label>
+                </li>
+
+                <li>
+                  <input id="fighting" name="game" type="checkbox" value="fighting" />
+                  <label class="label" for="fighting">Fighting</label>
+                </li>
+
+                <li>
+                  <input id="rhythm" name="game" type="checkbox" value="rhythm" />
+                  <label class="label" for="rhythm">Rhythm</label>
+                </li>
+
+                <li>
+                  <input id="battle_royal" name="game" type="checkbox" value="battle_royal" />
+                  <label class="label" for="battle_royal">Battle royal</label>
+                </li>
+
+                <li>
+                  <input id="platforme" name="game" type="checkbox" value="platforme" />
+                  <label class="label" for="platforme">Platforme</label>
+                </li>
               </ul>
-          
             </div>
 
             <!-- Improve game -->
             <div class="form-group">
               <legend>Is there any specific game(s) you would like to improve in?</legend>
 
-                <input id="yes_game" name="improve_game" type="radio" value="yes">
-                <label class="label" for="yes_game">Yes</label>
+              <input id="yes_game" name="improve_game" type="radio" value="yes" />
+              <label class="label" for="yes_game">Yes</label>
 
-                <input id="no_game" name="improve_game" type="radio" value="no">
-                <label class="label" for="no_game">No</label>
+              <input id="no_game" name="improve_game" type="radio" value="no" />
+              <label class="label" for="no_game">No</label>
             </div>
 
             <div class="form-group no-show">
               <legend>What game(s) would you like to improve in?</legend>
-              
-              <ul>
 
+              <ul>
                 <li>
-                  <input id="cs_go" name="game_improve" type="checkbox" value="cs:go">
+                  <input id="cs_go" name="game_improve" type="checkbox" value="cs:go" />
                   <label class="label" for="cs_go">CS:GO</label>
                 </li>
 
                 <li>
-                  <input id="tekken" name="game_improve" type="checkbox" value="tekken">
+                  <input id="tekken" name="game_improve" type="checkbox" value="tekken" />
                   <label class="label" for="tekken">Tekken</label>
                 </li>
 
                 <li>
-                  <input id="fifa" name="game_improve" type="checkbox" value="fifa">
+                  <input id="fifa" name="game_improve" type="checkbox" value="fifa" />
                   <label class="label" for="fifa">FIFA</label>
                 </li>
 
                 <li>
-                  <input id="mario" name="game_improve" type="checkbox" value="super mario">
+                  <input id="mario" name="game_improve" type="checkbox" value="super mario" />
                   <label class="label" for="mario">Super Mario</label>
                 </li>
 
                 <li>
-                  <input id="fortnite" name="game_improve" type="checkbox" value="fortnite">
+                  <input id="fortnite" name="game_improve" type="checkbox" value="fortnite" />
                   <label class="label" for="fortnite">Fortnite</label>
                 </li>
 
                 <li>
-                  <input id="cod" name="game_improve" type="checkbox" value="call of duty">
+                  <input id="cod" name="game_improve" type="checkbox" value="call of duty" />
                   <label class="label" for="cod">Call of Duty</label>
                 </li>
 
                 <li>
-                  <input id="sims" name="game_improve" type="checkbox" value="sims">
+                  <input id="sims" name="game_improve" type="checkbox" value="sims" />
                   <label class="label" for="sims">The Sims</label>
                 </li>
-              
+
                 <li>
-                  <input id="mortal_combat" name="game_improve" type="checkbox" value="mortal combat">
+                  <input id="mortal_combat" name="game_improve" type="checkbox" value="mortal combat" />
                   <label class="label" for="mortal_combat">Mortal Combat</label>
                 </li>
 
                 <li>
-                  <input id="guitar_hero" name="game_improve" type="checkbox" value="guitar hero">
+                  <input id="guitar_hero" name="game_improve" type="checkbox" value="guitar hero" />
                   <label class="label" for="guitar_hero">Guitar Hero</label>
                 </li>
 
                 <li>
-                  <input id="wow" name="game_improve" type="checkbox" value="world of warcraft">
+                  <input id="wow" name="game_improve" type="checkbox" value="world of warcraft" />
                   <label class="label" for="wow">World of Warcraft</label>
                 </li>
 
                 <li>
-                  <input id="skyrim" name="game_improve" type="checkbox" value="skyrim">
+                  <input id="skyrim" name="game_improve" type="checkbox" value="skyrim" />
                   <label class="label" for="skyrim">Skyrim</label>
                 </li>
-              
+
                 <li>
-                  <input id="starcraft" name="game_improve" type="checkbox" value="starcraft">
+                  <input id="starcraft" name="game_improve" type="checkbox" value="starcraft" />
                   <label class="label" for="starcraft">Starcraft</label>
                 </li>
 
                 <li>
-                  <input id="warcraft" name="game_improve" type="checkbox" value="warcraft">
+                  <input id="warcraft" name="game_improve" type="checkbox" value="warcraft" />
                   <label class="label" for="warcraft">Warcraft</label>
                 </li>
 
                 <li>
-                  <input id="lol" name="game_improve" type="checkbox" value="league of legends">
+                  <input id="lol" name="game_improve" type="checkbox" value="league of legends" />
                   <label class="label" for="lol">League of Legends</label>
                 </li>
 
                 <li>
-                  <input id="dota" name="game_improve" type="checkbox" value="dota">
+                  <input id="dota" name="game_improve" type="checkbox" value="dota" />
                   <label class="label" for="dota">Dota</label>
                 </li>
 
                 <li>
-                  <input id="valorant" name="game_improve" type="checkbox" value="valorant">
+                  <input id="valorant" name="game_improve" type="checkbox" value="valorant" />
                   <label class="label" for="valorant">Valorant</label>
                 </li>
 
                 <li>
-                  <input id="left_for_dead" name="game_improve" type="checkbox" value="left for dead">
+                  <input id="left_for_dead" name="game_improve" type="checkbox" value="left for dead" />
                   <label class="label" for="left_for_dead">Left for dead</label>
                 </li>
 
                 <li>
-                  <input id="overwatch" name="game_improve" type="checkbox" value="overwatch">
+                  <input id="overwatch" name="game_improve" type="checkbox" value="overwatch" />
                   <label class="label" for="overwatch">Overwatch</label>
                 </li>
 
                 <li>
-                  <input id="pubg" name="game_improve" type="checkbox" value="pubg">
+                  <input id="pubg" name="game_improve" type="checkbox" value="pubg" />
                   <label class="label" for="pubg">PUBG</label>
                 </li>
 
                 <li>
-                  <input id="diablo" name="game_improve" type="checkbox" value="diablo">
+                  <input id="diablo" name="game_improve" type="checkbox" value="diablo" />
                   <label class="label" for="diablo">Diablo</label>
                 </li>
-                
+
                 <li>
-                  <input id="minecraft" name="game_improve" type="checkbox" value="minecraft">
+                  <input id="minecraft" name="game_improve" type="checkbox" value="minecraft" />
                   <label class="label" for="minecraft">Minecraft</label>
                 </li>
               </ul>
@@ -264,170 +265,166 @@
 
             <!-- Improve skill -->
             <div class="form-group">
-              <legend>Is there any specific area(s) you would like to improve in?
+              <legend>
+                Is there any specific area(s) you would like to improve in?
                 <span>E.g. reaction time, tactics, technology ect.</span>
               </legend>
 
-              <input id="yes_area" name="improve_area" type="radio" value="yes">
+              <input id="yes_area" name="improve_area" type="radio" value="yes" />
               <label class="label" for="yes_area">Yes</label>
 
-              <input id="no_area" name="improve_area" type="radio" value="no">
+              <input id="no_area" name="improve_area" type="radio" value="no" />
               <label class="label" for="no_area">No</label>
-
             </div>
 
             <div class="form-group no-show">
               <legend>What area(s) would you like to improve in?</legend>
-              
+
               <ul>
                 <li>
-                  <input id="hand_eye_coordination" name="area_improve" type="checkbox" value="Hand/eye coordination">
+                  <input id="hand_eye_coordination" name="area_improve" type="checkbox" value="Hand/eye coordination" />
                   <label class="label" for="hand_eye_coordination">Hand/eye coordination</label>
                 </li>
 
                 <li>
-                  <input id="reaction_time" name="area_improve" type="checkbox" value="reaction time">
+                  <input id="reaction_time" name="area_improve" type="checkbox" value="reaction time" />
                   <label class="label" for="reaction_time">Reaction time</label>
                 </li>
 
                 <li>
-                  <input id="hearing" name="area_improve" type="checkbox" value="hearing">
+                  <input id="hearing" name="area_improve" type="checkbox" value="hearing" />
                   <label class="label" for="hearing">Hearing</label>
                 </li>
 
                 <li>
-                  <input id="vision" name="area_improve" type="checkbox" value="vision">
+                  <input id="vision" name="area_improve" type="checkbox" value="vision" />
                   <label class="label" for="vision">Vision</label>
                 </li>
 
                 <li>
-                  <input id="communication" name="area_improve" type="checkbox" value="communication">
+                  <input id="communication" name="area_improve" type="checkbox" value="communication" />
                   <label class="label" for="communication">Communication</label>
                 </li>
 
                 <li>
-                  <input id="multi-tasking" name="area_improve" type="checkbox" value="multi-tasking">
+                  <input id="multi-tasking" name="area_improve" type="checkbox" value="multi-tasking" />
                   <label class="label" for="multi-tasking">Multi-tasking</label>
                 </li>
 
                 <li>
-                  <input id="mindset" name="area_improve" type="checkbox" value="mindset">
+                  <input id="mindset" name="area_improve" type="checkbox" value="mindset" />
                   <label class="label" for="mindset">Mindset</label>
                 </li>
-              
+
                 <li>
-                  <input id="nutrition" name="area_improve" type="checkbox" value="nutrition">
+                  <input id="nutrition" name="area_improve" type="checkbox" value="nutrition" />
                   <label class="label" for="nutrition">Nutrition</label>
                 </li>
 
                 <li>
-                  <input id="injuries" name="area_improve" type="checkbox" value="injuries">
+                  <input id="injuries" name="area_improve" type="checkbox" value="injuries" />
                   <label class="label" for="injuries">Injuries</label>
                 </li>
 
                 <li>
-                  <input id="tech" name="game_improve" type="checkbox" value="technology">
+                  <input id="tech" name="game_improve" type="checkbox" value="technology" />
                   <label class="label" for="tech">Technology</label>
                 </li>
 
                 <li>
-                  <input id="physiology" name="area_improve" type="checkbox" value="physiology">
+                  <input id="physiology" name="area_improve" type="checkbox" value="physiology" />
                   <label class="label" for="physiology">Physiology</label>
                 </li>
-              
+
                 <li>
-                  <input id="sleep" name="area_improve" type="checkbox" value="sleep">
+                  <input id="sleep" name="area_improve" type="checkbox" value="sleep" />
                   <label class="label" for="sleep">Sleep</label>
                 </li>
 
                 <li>
-                  <input id="stress" name="area_improve" type="checkbox" value="stress">
+                  <input id="stress" name="area_improve" type="checkbox" value="stress" />
                   <label class="label" for="stress">Stress</label>
                 </li>
 
                 <li>
-                  <input id="tactical" name="area_improve" type="checkbox" value="tactical">
+                  <input id="tactical" name="area_improve" type="checkbox" value="tactical" />
                   <label class="label" for="tactical">Tactical</label>
                 </li>
 
                 <li>
-                  <input id="strategy" name="area_improve" type="checkbox" value="strategy">
+                  <input id="strategy" name="area_improve" type="checkbox" value="strategy" />
                   <label class="label" for="strategy">Strategy</label>
                 </li>
 
                 <li>
-                  <input id="leadership" name="area_improve" type="checkbox" value="leadership">
+                  <input id="leadership" name="area_improve" type="checkbox" value="leadership" />
                   <label class="label" for="leadership">Leadership</label>
                 </li>
-
               </ul>
             </div>
-            <button>Next</button>
+            <div class="forms_buttons">
+              <button class="">Next</button>
+            </div>
           </div>
         </fieldset>
 
         <fieldset id="personal_info" class="modal hide">
           <div class="content">
-            <p class="form-text">Perfect, we're almost there, just a few more questions!
-              <br>This time it's getting personal, but bare with us...</p>
+            <p class="form-text">Perfect, we're almost there, just a few more questions! <br />This time it's getting personal, but bare with us...</p>
 
             <!-- Gameplay -->
             <div class="form-group">
               <label for="gameplay">How many hours a day do you generally play?</label>
-              <input id="gameplay" name="gameplay" type="range" value="5" step="1" min="0" max="12">
+              <input id="gameplay" name="gameplay" type="range" value="5" step="1" min="0" max="12" />
             </div>
 
             <!-- Sleep -->
             <div class="form-group">
               <label for="sleep">How many hours of sleep do ypu get on average?</label>
-              <input id="sleep" name="sleep" type="range" value="7" step="1" min="0" max="12">
+              <input id="sleep" name="sleep" type="range" value="7" step="1" min="0" max="12" />
             </div>
 
             <!-- Exercise -->
             <div class="form-group">
-              <legend>Are you physically active during the week?
+              <legend>
+                Are you physically active during the week?
                 <span>Do you play any sports, go to the gym, take long walks with your dog?</span>
               </legend>
 
-              <input id="yes" name="exercise" type="radio" value="yes">
+              <input id="yes" name="exercise" type="radio" value="yes" />
               <label class="label" for="yes">Yes</label>
 
-              <input id="no" name="exercise" type="radio" value="no">
+              <input id="no" name="exercise" type="radio" value="no" />
               <label class="label" for="no">No</label>
 
-              <input id="not_important" name="exercise" type="radio" value="prefer not to answer">
+              <input id="not_important" name="exercise" type="radio" value="prefer not to answer" />
               <label class="label" for="not_important">I prefer not to answer/I don't find this relevant</label>
-
             </div>
 
             <!-- Mental health -->
             <div class="form-group">
-              <legend>How has your mental health been lately?
-                <span class="expand">Have you experienced any of the following symptoms:
-                  <br>Trouble sleeping, constant headache, lack of motivation, trouble concentrating ect.
-                </span>
+              <legend>
+                How has your mental health been lately?
+                <span class="expand">Have you experienced any of the following symptoms: <br />Trouble sleeping, constant headache, lack of motivation, trouble concentrating ect. </span>
               </legend>
 
-              <input id="yes" name="mental_health" type="radio" value="yes">
+              <input id="yes" name="mental_health" type="radio" value="yes" />
               <label class="label" for="yes">Yes</label>
 
-              <input id="no" name="mental_health" type="radio" value="no">
+              <input id="no" name="mental_health" type="radio" value="no" />
               <label class="label" for="no">No</label>
 
-              <input id="not_important" name="mental_health" type="radio" value="prefer not to answer">
+              <input id="not_important" name="mental_health" type="radio" value="prefer not to answer" />
               <label class="label" for="not_important">I prefer not to answer/I don't find this relevant</label>
-
             </div>
 
-            <p>That's it. We're ready to supply you with personal content to take your gaming to the next level.
-              <br>Just one more click and you're ready.
-            </p>
-
-            <button id="add" type="submit">Create account</button>
+            <p>That's it. We're ready to supply you with personal content to take your gaming to the next level. <br />Just one more click and you're ready.</p>
+            <div class="forms_buttons">
+              <button id="add" type="submit">Create account</button>
+            </div>
           </div>
         </fieldset>
-        
-        </form>
+      </form>
     </section>
 
     <script type="module" src="./main.js"></script>

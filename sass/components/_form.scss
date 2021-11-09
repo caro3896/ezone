@@ -50,8 +50,27 @@ input[type="radio"],
   padding: 0;
 }
 
+.modal_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: rgb(70, 70, 70);
+  box-shadow: none;
+  font-family: fonts.$base-font-bold;
+}
+
 .content {
   margin: 5vw;
+}
+
+.page_no {
+  font-family: fonts.$base-font-bold;
+  color: rgb(70, 70, 70);
 }
 
 // Form styling

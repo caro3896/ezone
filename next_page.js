@@ -27,12 +27,13 @@ function personalInfo() {
   document.querySelector("#personal_info").classList.remove("hide");
   document.querySelector("#add").addEventListener("click", thankYou);
   document.querySelector("#back2").addEventListener("click", goBack2);
-  close();
 }
 
 function thankYou() {
   console.log("User signed up!");
   document.querySelector("#personal_info").classList.add("hide");
+  document.querySelector("#signed_up").classList.remove("hide");
+  document.querySelector("#home").addEventListener("click", close);
 }
 
 function goBack1(){
@@ -52,28 +53,4 @@ function close(){
           modal.classList.add("hide");
         });
 }
-
-
-// document.querySelectorAll(".close").forEach(button => {
-//   button.addEventListener("click", () => {
-//     document.querySelectorAll(".modal").forEach(modal => {
-//       modal.classList.add(".hide");
-//     });
-//   });
-// });
-
-
-// document.querySelectorAll(".close").forEach(button => {
-//   button.addEventListener("click", () => {
-//     document.querySelectorAll(".modal").forEach(modal => {
-//       modal.classList.add(".hide");
-//     });
-//   });
-// });
-
-// button.addEventListener("click", () => {
-//   document.querySelectorAll(".modal").forEach(modal => {
-//   modal.classList.add(".hide");
-//   });
-// });
 

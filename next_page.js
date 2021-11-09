@@ -2,6 +2,9 @@ export function start() {
   console.log("ready to click on start button");
 
   document.querySelector("#join").addEventListener("click", gerenalInfo);
+  document.querySelectorAll(".close").forEach(close_button => {
+    close_button.addEventListener("click", close)
+  });
 }
 
 function gerenalInfo() {
@@ -24,6 +27,7 @@ function personalInfo() {
   document.querySelector("#personal_info").classList.remove("hide");
   document.querySelector("#add").addEventListener("click", thankYou);
   document.querySelector("#back2").addEventListener("click", goBack2);
+  close();
 }
 
 function thankYou() {
@@ -40,3 +44,36 @@ function goBack2(){
   document.querySelector("#personal_info").classList.add("hide");
   document.querySelector("#user_info").classList.remove("hide");
 }
+
+function close(){
+  console.log("close");
+  document.querySelectorAll(".modal").forEach(modal => {
+    console.log("close modal");
+          modal.classList.add("hide");
+        });
+}
+
+
+// document.querySelectorAll(".close").forEach(button => {
+//   button.addEventListener("click", () => {
+//     document.querySelectorAll(".modal").forEach(modal => {
+//       modal.classList.add(".hide");
+//     });
+//   });
+// });
+
+
+// document.querySelectorAll(".close").forEach(button => {
+//   button.addEventListener("click", () => {
+//     document.querySelectorAll(".modal").forEach(modal => {
+//       modal.classList.add(".hide");
+//     });
+//   });
+// });
+
+// button.addEventListener("click", () => {
+//   document.querySelectorAll(".modal").forEach(modal => {
+//   modal.classList.add(".hide");
+//   });
+// });
+

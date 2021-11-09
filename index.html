@@ -17,7 +17,7 @@
       <p class="p_splash">Get personalised content to help you become the best athlete</p>
 
       <form action="">
-        <fieldset id="gerenal_info" class="modal">
+        <fieldset id="gerenal_info" class="modal hide">
           <div class="content">
             <header class="modal_top">
               <p class="page_no">1/3</p>
@@ -387,7 +387,7 @@
           </div>
         </fieldset>
 
-        <fieldset id="personal_info" class="modal hide">
+        <fieldset id="personal_info" class="modal">
           <div class="content">
             <header class="modal_top">
               <p class="page_no">3/3</p>
@@ -399,12 +399,14 @@
             <div class="form-group">
               <label for="gameplay">How many hours a day do you generally play?</label>
               <input id="gameplay" name="gameplay" type="range" value="5" step="1" min="0" max="12" />
+              <span id="game_hours" class="range_value">5</span>
             </div>
 
             <!-- Sleep -->
             <div class="form-group">
               <label for="sleep">How many hours of sleep do ypu get on average?</label>
               <input id="sleep" name="sleep" type="range" value="7" step="1" min="0" max="12" />
+              <span id="sleep_hours" class="range_value">7</span>
             </div>
 
             <!-- Exercise -->
@@ -451,5 +453,6 @@
     </section>
 
     <script type="module" src="./main.js"></script>
+    
   </body>
 </html>

@@ -19,6 +19,7 @@
   font-size: 0.85em;
   font-family: "sharpiro-regular";
   text-transform: uppercase;
+  padding: 12px 30px;
   // max-width: 400px;
 }
 
@@ -33,7 +34,7 @@
   z-index: -1;
 
   transition: 0.2s;
-  animation: gradient 4s infinite;
+  animation: gradient 9s infinite;
 }
 
 //animation på knap på frontpage
@@ -62,9 +63,15 @@ button {
   font-family: "sharpiro-regular";
   font-size: 1.1em;
   border: 1px solid #3e16d5;
-  box-shadow: inset 3px 3px 7px #fcf5f5;
-  //box-shadow: 1px 2px 11px #897eb4;
+  box-shadow: inset 3px 3px 7px #fcf5f580, 3px 3px 11px #897eb4;
+  cursor: pointer;
 }
+
+#next1,
+#next2 {
+  padding: 20px 55px;
+}
+
 /*--- Ipad lodret---*/
 
 @media (min-width: 810px) {
@@ -84,6 +91,9 @@ button {
     margin-left: 85px;
     margin-right: 85px;
   }
+  .forms_buttons {
+    margin: 10px 0 10px 0;
+  }
 }
 
 /*--- Desktop ---*/
@@ -93,5 +103,8 @@ button {
   #join {
     margin-left: 95px;
     margin-right: 95px;
+  }
+  .forms_buttons {
+    margin: 10px 0 0px 0;
   }
 }

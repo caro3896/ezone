@@ -49,15 +49,19 @@ body {
 
 /*--- Ipad lodret---*/
 
-@media (min-width: 810px) {
+@media (min-width: 768px) {
   #splash {
-    background-image: url(images/ipad.png);
-    grid-template-columns: 100px 65px auto 65px 100px;
-    grid-template-rows: 25% 100px auto 68px 11%;
+    background-image: url(images/ipad1.png);
+    grid-template-columns: 100px 105px auto 105px 100px;
+    grid-template-rows: 25% 100px auto 75px 22%;
   }
 
   p {
     margin: 0.5em 7.7em 0 7.7em;
+  }
+
+  .p_splash {
+    margin: 1em 1em 0 1em;
   }
 }
 
@@ -76,10 +80,14 @@ body {
 @media (min-width: 1200px) {
   #splash {
     background-image: url(images/desktop.png);
-    grid-template-columns: 290px 135px auto 135px 290px;
-    grid-template-rows: 25% 100px auto 67px 10%;
+    grid-template-columns: 290px 165px auto 165px 290px;
+    grid-template-rows: 25% 100px auto 72px 10%;
   }
   p {
     margin: 0.5em 9em 0em 9em;
+  }
+
+  .p_splash {
+    margin: 1em 8em 0 8em;
   }
 }

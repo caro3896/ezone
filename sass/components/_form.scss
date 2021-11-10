@@ -152,6 +152,7 @@ input {
   border: none;
   height: 40px;
   width: 100%;
+  padding-left: 2vw;
 }
 
 input[type="checkbox"],
@@ -291,4 +292,61 @@ li {
 
 .hint {
   display: block;
+}
+@media (min-width: 750px) {
+  .page_no {
+    margin: 0.5em 0em 0 0em;
+  }
+  .modal {
+    max-width: 75vw;
+    max-height: 82vh;
+  }
+  input[name="age"] {
+    inline-size: 10ch;
+    display: block;
+  }
+  .content {
+    margin: 5vw 6vw 5vw 6vw;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
+    max-width: 45vw;
+    max-height: 110vh;
+  }
+
+  .content {
+    margin: 1vw;
+  }
+
+  .modal_top {
+    padding: 1vw;
+  }
+
+  svg {
+    width: 23%;
+  }
+  .page_no {
+    margin: 0.1em 2em 0 0em;
+  }
+
+  .close {
+    margin: 0.1em 0.2em 0 0em;
+  }
+
+  .label {
+    font-size: 0.8rem;
+  }
+
+  .form-group {
+    line-height: 1.2rem;
+  }
+
+  .content {
+    margin: 0.5vw 3vw 0.5vw 3vw;
+  }
+
+  .form-text {
+    margin: 17px auto;
+  }
 }

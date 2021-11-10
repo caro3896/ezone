@@ -30,14 +30,37 @@ form.setAttribute("novalidate", true);
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (form.checkValidity()) {
+    // Laver array på checkede checkboxes
+    const arrayGames = [];
+    const gameCheckboxes = document.querySelectorAll("input[name=game][type=checkbox]:checked");
+
+    for (let i = 0; i < gameCheckboxes.length; i++) {
+      arrayGames.push(gameCheckboxes[i].value);
+    }
+
+    const arrayImproveGames = [];
+    const gameImproveCheckboxes = document.querySelectorAll("input[name=game_improve][type=checkbox]:checked");
+
+    for (let i = 0; i < gameImproveCheckboxes.length; i++) {
+      arrayImproveGames.push(gameImproveCheckboxes[i].value);
+    }
+
+    const arrayAreas = [];
+    const areasCheckboxes = document.querySelectorAll("input[name=area_improve][type=checkbox]:checked");
+
+    for (let i = 0; i < areasCheckboxes.length; i++) {
+      arrayAreas.push(areasCheckboxes[i].value);
+    }
+
     const data = {
       name: form.elements.name.value,
       age: form.elements.age.value,
       gamertag: form.elements.tag.value,
       email: form.elements.email.value,
       password: form.elements.password.value,
-      games: form.elements.game.value, // Mangler at komme ind
-      areas: form.elements.area_improve.value, // Mangler at komme ind
+      games: arrayGames,
+      games_improve: arrayImproveGames,
+      areas: arrayAreas,
       gamehours: form.elements.gameplay.value,
       sleep: form.elements.sleep.value,
       exercise: form.elements.exercise.value,

@@ -9,25 +9,54 @@
   src: url("../fonts/sharpiro-bold.woff2") format("woff2");
 }
 
-// @font-face {
-//   font-family: "uniformProFontForFrontpageButton";
-//   src: url("../fonts/uniform-pro-con-medium.woff2") format("woff2");
-// }
+@font-face {
+  font-family: "uniform-rounded";
+  src: url("../fonts/uniform-rounded.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "uniformProConMedium";
+  src: url("../fonts/uniform-pro-con-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "uniformProConBlack";
+  src: url("../fonts/uniform-pro-con-black.woff2") format("woff2");
+}
 
 $base-font: "sharpiro-regular";
 $base-font-bold: "sharpiro-bold";
 
+$uniform-medium: "uniformProConMedium";
+$uniform-black: "uniformProConBlack";
+
 p {
   font-family: $base-font;
+  color: white;
 }
 
 label {
-  font-family: $base-font_bold;
-  text-transform: uppercase;
+  font-family: $uniform-medium;
+  // text-transform: uppercase;
 }
 
 .hint {
   font-family: $base-font;
   font-size: 0.9rem;
   color: rgb(79, 79, 79);
+}
+
+h1 {
+  font-family: $uniform-black;
+  font-size: 1.3rem;
+  color: #ffb591;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  margin: 30px auto;
+}
+
+h2 {
+  font-family: $uniform-medium;
+  font-size: 1.2rem;
 }

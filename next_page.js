@@ -2,15 +2,27 @@ export function start() {
   console.log("ready to click on start button");
 
   document.querySelector("#join").addEventListener("click", gerenalInfo);
-  document.querySelectorAll(".close").forEach(close_button => {
-    close_button.addEventListener("click", close)
+  document.querySelectorAll(".close").forEach((close_button) => {
+    close_button.addEventListener("click", close);
   });
 }
 
 function gerenalInfo() {
   console.log("Join butter clicked! General info");
   document.querySelector("#gerenal_info").classList.remove("hide");
-  document.querySelector("#next1").addEventListener("click", userInfo);
+
+  // Valider before clicking on next
+  const form = document.querySelector("form");
+  form.setAttribute("novalidate", true);
+  document.querySelector("#next1").addEventListener("click", (e) => {
+    e.preventDefault();
+    if (form.checkValidity()) {
+      console.log("hej");
+      userInfo();
+    } else {
+      form.reportValidity();
+    }
+  });
 }
 
 function userInfo() {
@@ -36,21 +48,20 @@ function thankYou() {
   document.querySelector("#home").addEventListener("click", close);
 }
 
-function goBack1(){
+function goBack1() {
   document.querySelector("#user_info").classList.add("hide");
   document.querySelector("#gerenal_info").classList.remove("hide");
 }
 
-function goBack2(){
+function goBack2() {
   document.querySelector("#personal_info").classList.add("hide");
   document.querySelector("#user_info").classList.remove("hide");
 }
 
-function close(){
+function close() {
   console.log("close");
-  document.querySelectorAll(".modal").forEach(modal => {
+  document.querySelectorAll(".modal").forEach((modal) => {
     console.log("close modal");
-          modal.classList.add("hide");
-        });
+    modal.classList.add("hide");
+  });
 }
-

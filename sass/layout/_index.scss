@@ -63,7 +63,7 @@ body {
   }
 
   .p_splash {
-    margin: 1em 1em 0 1em;
+    // margin: 1em 1em 0 1em;
   }
 }
 
@@ -83,13 +83,14 @@ body {
   #splash {
     background-image: url(images/desktop.png);
     grid-template-columns: 290px 165px auto 165px 290px;
-    grid-template-rows: 25% 100px auto 72px 10%;
+    grid-template-rows: 25% 100px auto 72px 20%;
   }
   p {
     margin: 0.5em 9em 0em 9em;
   }
 
   .p_splash {
-    margin: 1em 8em 0 8em;
+    margin: 0;
+    font-size: 1.2rem;
   }
 }

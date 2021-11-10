@@ -19,7 +19,7 @@ export function rangeInput() {
 
 export function gameTagInput() {
   console.log("hello");
-  const gamerTag = document.querySelector("#name");
+  const gamerTag = document.querySelector("#tag");
 
   gamerTag.addEventListener("input", () => {
     console.log(gamerTag.value);

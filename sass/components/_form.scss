@@ -45,9 +45,9 @@ input[type="range"]::-webkit-slider-thumb {
 // Modal styling
 
 .modal {
-  background: rgba(255, 255, 255, 0.72);
+  background: #17162bb0;
   border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 55px 20px rgb(0 0 0 / 75%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   width: 90vw;
@@ -55,6 +55,7 @@ input[type="range"]::-webkit-slider-thumb {
   border: none;
   overflow-y: scroll;
   padding: 0;
+  height: 90vh;
 }
 
 .modal.active {
@@ -66,13 +67,16 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background: rgb(229 229 229);
+  background: #17162b;
   padding: 5vw;
   z-index: 8;
 }
 
 svg {
   width: 30%;
+  path {
+    fill: #b9f8ba;
+  }
 }
 
 // MOVE TO BUTTONS??
@@ -80,7 +84,7 @@ svg {
   background-color: transparent;
   border: none;
   padding: 0;
-  color: rgb(70, 70, 70);
+  color: #e3e3e5;
   box-shadow: none;
   font-family: fonts.$base-font-bold;
   width: auto;
@@ -91,7 +95,7 @@ svg {
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: black;
+  color: white;
   text-decoration: underline;
   display: block;
   text-align: center;
@@ -110,7 +114,7 @@ svg {
 
 .page_no {
   font-family: fonts.$base-font-bold;
-  color: rgb(70, 70, 70);
+  color: #e3e3e5;
 }
 
 // Form styling
@@ -130,17 +134,24 @@ svg {
   margin: 20px auto;
   text-align: center;
   // margin-bottom: 20px;
+  line-height: 1.5rem;
 }
 
 label,
 legend {
-  font-family: fonts.$base-font-bold;
   text-transform: uppercase;
   display: inline-block;
+  color: white;
 }
 
 legend {
+  font-family: fonts.$base-font-bold;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+legend p {
+  text-transform: none;
 }
 
 // legend + input[type="radio"] {
@@ -148,12 +159,16 @@ legend {
 // }
 
 .label {
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+#signed_up {
+  height: auto;
 }
 
 // Input styling
 input {
-  box-shadow: inset 1px 3px 5px 3px #aea8a86e, 3px 3px 6px 2px #aea8a86e;
+  box-shadow: inset 1px 3px 5px 3px #4c4c4c6e, 3px 3px 6px 2px #000000bd;
   border-radius: 20px;
   border: none;
   height: 40px;
@@ -203,7 +218,7 @@ input[type="radio"]:checked:before {
 
 input[type="range"] {
   height: 10px;
-  width: 85%;
+  width: 82%;
 }
 
 /* Special styling for WebKit/Blink/Chrome */
@@ -267,22 +282,22 @@ label + input[type="radio"] {
 }
 
 input:focus {
-  outline: 2px solid #3e16d5;
+  outline: 3px solid #6259fa;
 }
 
 /* Validering */
 
 input:valid:not(:placeholder-shown, :focus, [type="radio"], [type="checkbox"], [type="range"]) {
-  border: 2px solid green;
+  border: 3px solid #5ce07f;
 }
 
 input:invalid:not(:placeholder-shown, :focus, [type="radio"], [type="checkbox"], [type="range"]) {
-  border: 2px solid #e60a0a;
+  border: 3px solid #fa3328;
 }
 
 input:not(:focus, :placeholder-shown):invalid ~ .error {
   visibility: visible;
-  color: #e60a0a;
+  color: #fa3328;
   font-size: 0.9rem;
 }
 
@@ -307,7 +322,7 @@ li {
 .error {
   font-family: fonts.$base-font;
   text-transform: none;
-  color: rgb(70, 70, 70);
+  color: #e3e3e5;
 }
 
 .hint {
@@ -357,6 +372,7 @@ li {
   .form-text-p {
     margin: 0 7em;
     text-align: center;
+    line-height: 1.5rem;
   }
   .check_image {
     width: 20vw;
@@ -406,5 +422,17 @@ li {
 
   .check_image {
     max-width: 9vw;
+  }
+}
+
+//  TEST
+
+.radio_3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 10px;
+
+  span {
+    display: flex;
   }
 }

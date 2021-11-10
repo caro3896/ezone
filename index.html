@@ -41,10 +41,11 @@
             <button type="reset" class="close">X</button>
           </header>
           <div class="content">
-            <p class="form-text">
+            <h1>Become a member of the ezone community</h1>
+            <!-- <p class="form-text">
               Create and account and become a member of the ezone community. <br />
               Log in and get a personalised feed with tips and trick for you to become the best esport athlete you can be.
-            </p>
+            </p> -->
             <!-- Name -->
             <div class="form-group">
               <label class="label" for="name"
@@ -121,8 +122,9 @@
             <button type="reset" class="close">X</button>
           </header>
           <div class="content">
-            <p id="user" class="form-text">Alright, user</p>
-            <p class="form-text">Now let's get to know you a little better, that way we can customize our content and only show you things you might find interesting and relevant.</p>
+            <h1 id="user" class="form-text">Alright, user</h1>
+            <p class="form-text">Now it's time to get to know you a little better.
+              <br>That way we can customize our content and only show you things you might find interesting and relevant.</p>
 
             <!-- Games  -->
             <div class="form-group">
@@ -327,7 +329,7 @@
             <div class="form-group">
               <legend>
                 Is there any specific area(s) you would like to improve in?
-                <span>E.g. reaction time, tactics, technology ect.</span>
+                <span class="hint">E.g. reaction time, tactics, technology ect.</span>
               </legend>
 
               <input id="yes_area" name="improve_area" type="radio" value="yes" />
@@ -475,18 +477,23 @@
                 Are you physically active during the week?
                 <span class="hint">Do you play any sports, go to the gym, take long walks with your dog?</span>
               </legend>
+              
+              <div class="radio_3">
+              <span>
+                <input id="yes_exercise" name="exercise" type="radio" value="yes" />
+                <label class="label" for="yes">Yes</label>
+              </span>
 
-              <input id="yes_exercise" name="exercise" type="radio" value="yes" />
-              <label class="label" for="yes">Yes</label>
+              <span>   
+                <input id="no_exercise" name="exercise" type="radio" value="no" />
+                <label class="label" for="no">No</label>
+              </span>
 
-              <input id="no_exercise" name="exercise" type="radio" value="no" />
-              <label class="label" for="no">No</label>
-
-              <input id="not_important_exercise" name="exercise" type="radio" value="prefer not to answer" />
-              <label class="label" for="not_important"
-                >I prefer not to answer/ <br />
-                I don't find this relevant</label
-              >
+              <span>
+                <input id="not_important_exercise" name="exercise" type="radio" value="prefer not to answer" />
+                <label class="label" for="not_important">I prefer not to answer</label>
+              </span>
+              </div>
             </div>
 
             <!-- Mental health -->
@@ -496,17 +503,25 @@
                 <span class="hint">Have you experienced trouble sleeping, constant headache, lack of motivation, trouble concentrating ect. </span>
               </legend>
 
-              <input id="yes_health" name="mental_health" type="radio" value="yes" />
-              <label class="label" for="yes">Yes</label>
+              <div class="radio_3">
+                <span>
+                  <input id="yes_health" name="mental_health" type="radio" value="yes" />
+                  <label class="label" for="yes">Yes</label>
+                </span>
 
-              <input id="no_health" name="mental_health" type="radio" value="no" />
-              <label class="label" for="no">No</label>
+                <span>
+                  <input id="no_health" name="mental_health" type="radio" value="no" />
+                  <label class="label" for="no">No</label>
+                </span>
 
-              <input id="not_important_health" name="mental_health" type="radio" value="prefer not to answer" />
-              <label class="label" for="not_important">I prefer not to answer/I don't find this relevant</label>
+                <span>
+                  <input id="not_important_health" name="mental_health" type="radio" value="prefer not to answer" />
+                  <label class="label" for="not_important">I prefer not to answer</label>
+                </span>
+
             </div>
+          </div>
 
-            <p class="form-text">That's it. We're ready to supply you with personal content to take your gaming to the next level. <br />Just one more click and you're ready.</p>
             <div class="forms_buttons">
               <button id="add" type="submit">Create account</button>
               <button type="button" id="back2">Go back</button>
@@ -544,7 +559,8 @@
             <img class="check_image" src="images/check.png" alt="check" />
             <p class="check_p">Succiess</p>
           </div>
-          <p class="form-text-p">That's it. We're ready to supply you with personal content to help you take your gaming to the next level. <br />Check it out!</p>
+          <p class="form-text-p">That's it. 
+            <br>We're ready to supply you with personal content to help you take your gaming to the next level. <br />Check it out!</p>
           <button type="button" id="home"><span>Go to homepage</span></button>
         </div>
       </div>

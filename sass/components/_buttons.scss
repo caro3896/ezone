@@ -52,19 +52,26 @@
 
 .forms_buttons {
   text-align: center;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 button {
-  background-color: #3e16d5;
-  padding: 20px 30px;
+  background-color: transparent;
+  border: 2px solid #ffb591;
+  padding: 20px 20px;
   border-radius: 50px;
-  color: white;
-  font-family: "sharpiro-regular";
-  font-size: 1.1em;
-  border: 1px solid #3e16d5;
+  color: #ffb591;
+  font-family: fonts.$uniform-black;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
   // box-shadow: inset 3px 3px 7px #fcf5f580, 3px 3px 11px #897eb4;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffb591;
+  color: #17162b;
 }
 
 #next1,

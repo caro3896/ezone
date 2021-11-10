@@ -381,8 +381,8 @@ li {
 
 @media (min-width: 1200px) {
   .modal {
-    max-width: 45vw;
-    max-height: 110vh;
+    max-width: 35vw;
+    max-height: 80vh;
   }
 
   .content {
@@ -405,11 +405,11 @@ li {
   }
 
   .label {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 
   .form-group {
-    line-height: 1.2rem;
+    line-height: 1.8rem;
   }
 
   .content {
@@ -422,6 +422,10 @@ li {
 
   .check_image {
     max-width: 9vw;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 }
 

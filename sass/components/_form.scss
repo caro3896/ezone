@@ -28,6 +28,7 @@ input[type="range"]::-webkit-slider-thumb {
 .error {
   visibility: hidden;
   color: #da2424;
+  font-size: 0.9rem;
 }
 
 // Hide modal
@@ -152,6 +153,11 @@ input {
   border: none;
   height: 40px;
   width: 100%;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  font-style: italic;
 }
 
 input[type="checkbox"],
@@ -257,12 +263,20 @@ input:focus {
   outline: 2px solid #3e16d5;
 }
 
-input:valid {
-  // border: 1px solid green;
+/* Validering */
+
+input:valid:not(:placeholder-shown, :focus, [type="radio"], [type="checkbox"]) {
+  border: 2px solid green;
 }
 
-input:invalid {
-  // border: 1px solid #da2424;
+input:invalid:not(:placeholder-shown, :focus, [type="radio"], [type="checkbox"]) {
+  border: 2px solid #e60a0a;
+}
+
+input:not(:focus, :placeholder-shown):invalid ~ .error {
+  visibility: visible;
+  color: #e60a0a;
+  font-size: 0.9rem;
 }
 
 ul {

@@ -18,11 +18,16 @@
   box-shadow: inset 1px 1px 6px #bd9b8f6b, 1px 1px 6px #3d3460;
   z-index: 4;
   font-size: 0.85em;
-  font-family: "sharpiro-regular";
+  font-family: fonts.$uniform-black;
   text-transform: uppercase;
   padding: 12px 30px;
-  color: ffb591;
+  color: #ffb591;
   // max-width: 400px;
+}
+
+#join:hover {
+  background-color: #ffb591;
+  color: #17162b;
 }
 
 // .fill-two {

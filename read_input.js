@@ -24,6 +24,7 @@ export function gameTagInput() {
   gamerTag.addEventListener("input", () => {
     console.log(gamerTag.value);
     document.querySelector("#user").textContent = `Alright, ${gamerTag.value}`;
+    document.querySelector("#user_login").textContent = `Welcome to the ezone community ${gamerTag.value}`;
   });
 }
 

@@ -63,7 +63,7 @@ button {
   font-family: "sharpiro-regular";
   font-size: 1.1em;
   border: 1px solid #3e16d5;
-  box-shadow: inset 3px 3px 7px #fcf5f580, 3px 3px 11px #897eb4;
+  // box-shadow: inset 3px 3px 7px #fcf5f580, 3px 3px 11px #897eb4;
   cursor: pointer;
 }
 
@@ -71,6 +71,31 @@ button {
 #next2 {
   padding: 20px 55px;
 }
+
+#home {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  transition: all 0.2s;
+  // overflow: hidden;
+}
+
+// #home span {
+//   display: block;
+//   margin-left: 0.3em;
+//   transition: all 0.3s ease-in-out;
+//   visibility: inherit;
+//   opacity: 1;
+// }
+
+// #home:hover span {
+//   transform: translatey(-5em);
+// }
+// #home:active {
+//   transform: scale(0.95);
+// }
 
 /*--- Ipad lodret---*/
 

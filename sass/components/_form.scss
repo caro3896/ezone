@@ -1,4 +1,5 @@
 @use "../base/fonts";
+@use "../base/colors";
 
 // Form reset
 
@@ -50,7 +51,7 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   width: 90vw;
-  height: 95vh;
+  max-height: 95vh;
   border: none;
   overflow-y: scroll;
   padding: 0;
@@ -312,6 +313,31 @@ li {
 .hint {
   display: block;
 }
+
+.check {
+  background-color: colors.$color_on_lastmodal;
+  margin-bottom: 2em;
+}
+.check_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 27vw;
+  padding-top: 4em;
+  padding-bottom: 1em;
+}
+.check_p {
+  text-align: center;
+  padding-bottom: 2em;
+  color: white;
+  font-weight: bold4;
+}
+
+.form-text-p {
+  margin: 0 2em;
+  text-align: center;
+}
+
 @media (min-width: 750px) {
   .page_no {
     margin: 0.5em 0em 0 0em;
@@ -327,7 +353,16 @@ li {
   .content {
     margin: 5vw 6vw 5vw 6vw;
   }
+
+  .form-text-p {
+    margin: 0 7em;
+    text-align: center;
+  }
+  .check_image {
+    width: 20vw;
+  }
 }
+
 @media (min-width: 1200px) {
   .modal {
     max-width: 45vw;
@@ -367,5 +402,9 @@ li {
 
   .form-text {
     margin: 17px auto;
+  }
+
+  .check_image {
+    max-width: 9vw;
   }
 }

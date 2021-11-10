@@ -56,6 +56,10 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 0;
 }
 
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .modal_top {
   display: flex;
   justify-content: space-between;
@@ -194,6 +198,8 @@ input[type="radio"]:checked:before {
   border-radius: 50px;
 }
 
+// Styling on range input
+
 input[type="range"] {
   height: 10px;
   width: 85%;
@@ -265,11 +271,11 @@ input:focus {
 
 /* Validering */
 
-input:valid:not(:placeholder-shown, :focus, [type="radio"], [type="checkbox"]) {
+input:valid:not(:placeholder-shown, :focus, [type="radio"], [type="checkbox"], [type="range"]) {
   border: 2px solid green;
 }
 
-input:invalid:not(:placeholder-shown, :focus, [type="radio"], [type="checkbox"]) {
+input:invalid:not(:placeholder-shown, :focus, [type="radio"], [type="checkbox"], [type="range"]) {
   border: 2px solid #e60a0a;
 }
 

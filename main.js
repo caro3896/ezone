@@ -24,6 +24,7 @@ function showMembers(member) {
 }
 
 const form = document.querySelector("form");
+
 form.setAttribute("novalidate", true);
 
 form.addEventListener("submit", (e) => {
@@ -36,9 +37,11 @@ form.addEventListener("submit", (e) => {
       email: form.elements.email.value,
       password: form.elements.password.value,
       games: form.elements.game.value, // Mangler at komme ind
-      /*    areas: form.elements.areas.value,
-      gamehours: form.elements.gamehours.value,
-      sleep: form.elements.sleep.value, */
+      areas: form.elements.area_improve.value, // Mangler at komme ind
+      gamehours: form.elements.gameplay.value,
+      sleep: form.elements.sleep.value,
+      exercise: form.elements.exercise.value,
+      health: form.elements.mental_health.value,
     };
     post(data);
   } else {

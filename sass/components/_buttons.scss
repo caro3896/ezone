@@ -27,6 +27,7 @@
 #join:hover {
   background-color: colors.$orange-light;
   color: #17162b;
+  transition: all 0.4s ease-in;
 }
 
 // .fill-two {
@@ -79,6 +80,7 @@ button {
 button:hover {
   background-color: colors.$orange-light;
   color: #17162b;
+  transition: all 0.4s ease-in;
 }
 
 #next1,
@@ -106,6 +108,11 @@ button:hover {
   font-family: fonts.$base-font-bold;
   width: auto;
 }
+
+// .close:hover {
+//   background-color: transparent;
+//   color: colors.$grey-pastel;
+// }
 
 #back1,
 #back2 {

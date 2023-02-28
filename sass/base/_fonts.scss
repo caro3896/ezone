@@ -1,12 +1,12 @@
 //font for the <p> on front pages.
 @font-face {
   font-family: "sharpiro-regular";
-  src: url("../fonts/sharpiro-regular.woff2") format("woff2");
+  src: url(".../fonts/sharpiro-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "sharpiro-bold";
-  src: url("../fonts/sharpiro-bold.woff2") format("woff2");
+  src: url(".../fonts/sharpiro-bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -16,12 +16,12 @@
 
 @font-face {
   font-family: "uniformProConMedium";
-  src: url("../fonts/uniform-pro-con-medium.woff2") format("woff2");
+  src: url(".../fonts/uniform-pro-con-medium.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "uniformProConBlack";
-  src: url("../fonts/uniform-pro-con-black.woff2") format("woff2");
+  src: url(".../fonts/uniform-pro-con-black.woff2") format("woff2");
 }
 
 $base-font: "sharpiro-regular";

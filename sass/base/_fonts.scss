@@ -2,8 +2,8 @@
 
 //font for the <p> on front pages.
 @font-face {
-  font-family: "sharpiro-regular";
-  src: url(fonts/sharpiro-regular.woff2) format("woff2");
+  font-family: sharpiro-regular;
+  src: url('fonts/sharpiro-regular.woff2') format("woff2");
 }
 
 @font-face {
@@ -33,18 +33,18 @@ $uniform-medium: "uniformProConMedium";
 $uniform-black: "uniformProConBlack";
 
 p {
-  font-family: $base-font;
-  font-family: "sharpiro-regular";
+  // font-family: $base-font;
+  // font-family: "sharpiro-regular";
   color: white;
 }
 
-label {
-  font-family: $uniform-medium;
-  // text-transform: uppercase;
-}
+// label {
+//   // font-family: $uniform-medium;
+//   // text-transform: uppercase;
+// }
 
 .hint {
-  font-family: $base-font;
+  // font-family: $base-font;
   font-size: 0.9rem;
   color: rgb(79, 79, 79);
 }
@@ -62,6 +62,6 @@ h1 {
 }
 
 h2 {
-  font-family: $uniform-medium;
+  // font-family: $uniform-medium;
   font-size: 1.2rem;
 }
